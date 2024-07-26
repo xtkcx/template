@@ -4,12 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Style-Type" content="text/css"/ >
-<meta http-equiv="Content-Script-Type" content="text/javascript"/>
-<meta http-equiv="imagetoolbar" content="no"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 <title>buyItem画面</title>
 <style type="text/css">
 /*========TAG LAYOUT========*/
@@ -30,11 +30,11 @@ table {
 }
 /*========ID LAYOUT========*/
 #top {
-	width: 780p x;
+	width: 780px;
 	margin: 30px auto;
+	border: 1px solid #333;
 }
 
-border:1px solid #333 ;
 #header {
 	width: 100%;
 	height: 80px;
@@ -64,7 +64,7 @@ border:1px solid #333 ;
 			<p>BuyItem</p>
 		</div>
 		<div>
-			<s:formaction="BuyItemAction">
+			<s:form action="BuyItemAction">
 				<table>
 					<tr>
 						<td><span>商品名</span></td>
@@ -95,10 +95,10 @@ border:1px solid #333 ;
 						<td><s:submit value="購入" /></td>
 					</tr>
 				</table>
-				</s:form>
-				<div>
-					<span>前画面に戻る場合は</span> <a href='<s:url action="HomeAction"/>'>こちら</a>
-				</div>
+			</s:form>
+			<div>
+				<span>前画面に戻る場合は</span> <a href='<s:url action="HomeAction"/>'>こちら</a>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
