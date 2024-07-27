@@ -71,25 +71,25 @@ table {
 				<table>
 					<tr>
 						<td>商品名</td>
-						<td><s:property value="session.buyItem_name" /></td>
+						<td><s:property value="session.buyItem_name"/></td>
 					</tr>
 					<tr>
 						<td>値段</td>
-						<td><s:property value="session.total_price" /> <span>
+						<td><s:property value="session.total_price"/> <span>
 								円 </span></td>
 					</tr>
 					<tr>
 						<td>購入個数</td>
-						<td><s:property value="session.total_count" /> <span>
+						<td><s:property value="session.total_count"/> <span>
 								個 </span></td>
 					</tr>
 					<tr>
 						<td>支払い方法</td>
-						<td><s:property value="session.total_payment" /></td>
+						<td><s:property value="session.total_payment"/></td>
 					</tr>
 				</table>
 				<s:form action="MyPageAction">
-					<input type="hidden" name="deleteFlg" bvalue="1">
+					<input type="hidden" name="deleteFlg" value="1">
 					<s:submit value="削除" method="delete" />
 				</s:form>
 			</s:if>
